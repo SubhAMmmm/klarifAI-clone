@@ -26,6 +26,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.storage.CompressedManifestStaticFilesStorage'
 ]
 
 STORAGES = {
@@ -147,7 +148,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),  # Additional locations of static files
 ]
 STATIC_ROOT = BASE_DIR/'staticfiles'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 # Sentence transformer path - Consider using Azure Blob Storage for production
 # LOCAL_SENTENCE_TRANSFORMER_PATH = os.environ.get('SENTENCE_TRANSFORMER_PATH', r'C:\Users\TapasmitaPattanaik\Desktop\ReactClone\backend')
