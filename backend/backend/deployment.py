@@ -11,7 +11,7 @@ SECRET_KEY = os.environ['MY_SECRET_KEY']
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'corsheaders.middleware.CorsMiddleware', 
-    'whitenoise.middleware.WhiteNoiseMiddleware' # Add CORS middleware early
+    'whitenoise.middleware.WhiteNoiseMiddleware', # Add CORS middleware early
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
