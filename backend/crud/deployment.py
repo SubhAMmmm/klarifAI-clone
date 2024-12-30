@@ -143,7 +143,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR/'staticfiles'
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Sentence transformer path - Consider using Azure Blob Storage for production
 # LOCAL_SENTENCE_TRANSFORMER_PATH = os.environ.get('SENTENCE_TRANSFORMER_PATH', r'C:\Users\TapasmitaPattanaik\Desktop\ReactClone\backend')
