@@ -1,8 +1,8 @@
 import os
 from pathlib import Path
+from settings import BASE_DIR
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # In production, this should be set as an environment variable
@@ -142,7 +142,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = BASE_DIR/'staticfiles'
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Sentence transformer path - Consider using Azure Blob Storage for production
